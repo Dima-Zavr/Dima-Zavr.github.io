@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Lenni Art</title>
-        <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/events.css">
+        <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
             <div class="page-header__container">
                 <a href="index.html" class="page-header__logo"><img src="assets/logo.svg"></a>
                 <nav class="page-header__nav">
-                    <a href="events.html" class="page-header__nav-link" id="">Мероприятия</a>
+                    <a href="events.html"  class="page-header__nav-link" id="">Мероприятия</a>
                     <a href="#" class="page-header__nav-link" id="">Блог</a>
                     <a href="#" class="page-header__nav-link" id="">О нас</a>
                     <a href="#" class="page-header__nav-link" id="">Контакты</a>
@@ -27,43 +27,10 @@
         </header>
     
         <main class="main">
-            <div class="home">
+            <div class="events">
 
-                <header class="main-header home__main-header">
-                    <h1 class="main-header__title">Арт - пространство</h1>
-                    <div class="main-header__picture">
-                        <img class="main-header__img" src="assets/LENNI.svg">
-                    </div>
-                    <p class="main-header__text">для людей, горящих сердцем и делом место для настоящего</p>
-                </header>
-
-                <section class="offers home__offers">
-                    <h3 class="offers__text">Я хочу:</h3>
-                    <div class="offers__buttons">
-                        <a href="#" class="btn offers__event-btn">Провести мероприятие</a>
-                        <a href="#" class="btn offers__tenant-btn">Стать арендатором</a>
-                    </div>
-                </section>
-                
-                <section class="about home__about">
-                    <h2 class="section__title">О нас</h2>
-                    <h3 class="about__title">Проект «Millennials»</h3>
-                    <p class="about__text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.</p>
-                    <img class="about__img1" src="assets/pic1.png" >
-                    <div class="about__pic2" >
-                        <img class="about__img2" src="assets/pic2.png" >
-                    </div>
-                    <h3 class="about__title about__title2">Мы предоставляем площади для вашего мероприятия </h3>
-                    <p class="about__text">И оказываем помощь с организацией, если вам это нужно.<br>Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.</p>
-                    <div class="about__rectangle">
-                        <img class="about__img3" src="assets/pic3.png">
-                    </div>
-                    <p class="about__text about__text3">Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
-                    <svg src="assets/button7.svg" class="about__btn"></svg>
-                </section>
-
-                <section class="home__events">
-                    <h2 class="section-title">Мероприятия</h2>
+                <section class="listing events__listing">
+                    <h2 class="listing__title section-title">Мероприятия</h2>
                     <div class="listing__events-list">
                         <article class="event-card listing__event-card">        
                             <a href="#" class="event-card__link">
@@ -87,7 +54,7 @@
                                 <p class="event-card__description">
                                     Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
                                 </p>
-                                <time datetime="2022-12-07T18:00" class="event-card__time">14.12.2022 | начало 18.30</time>
+                                <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
                             </a>
                         </article>
 
@@ -100,29 +67,55 @@
                                 <p class="event-card__description">
                                     Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.
                                 </p>
-                                <time datetime="2022-12-07T18:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+                                <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
                             </a>
                         </article>
-                    </div>
-                    <img class="events__slider" src="assets/slider.svg">
-                    <a href="events.html" src="events.html" class="events__btn">Смотреть все</a>
 
-                </section>
+                        <article class="event-card listing__event-card">        
+                            <a href="event.html" class="event-card__link">
+                                <picture class="event-card__picture">
+                                    <img src="assets/выставка Малевича.jpg" alt="nirvana" class="event-card__img" />
+                                </picture>
+                                <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                                <p class="event-card__description">
+                                    Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.
+                                </p>
+                                <time datetime="2022-12-23T20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
+                            </a>
+                        </article>
 
-                <section class="blog home__blog">
+                        <article class="event-card listing__event-card">        
+                            <a href="event.html" class="event-card__link">
+                                <picture class="event-card__picture">
+                                    <img src="assets/арт-съемка для Tatler.png" alt="nirvana" class="event-card__img" />
+                                </picture>
+                                <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                                <p class="event-card__description">
+                                    Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.
+                                </p>
+                                <time datetime="2022-12-25T13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
+                            </a>
+                        </article>
 
-                    <h2 class="section-title">Блог</h2>
-
-
-                </section>
-
-                <section class="contacts home__contacts">
-
-                </section>
+                        <article class="event-card listing__event-card">        
+                            <a href="event.html" class="event-card__link">
+                                <picture class="event-card__picture">
+                                    <img src="assets/the hatters.png" alt="nirvana" class="event-card__img" />
+                                </picture>
+                                <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                                <p class="event-card__description">
+                                    Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
+                                </p>
+                                <time datetime="2022-12-27T10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
+                            </a>
+                        </article>
                     
-                <div class="doit home__doit"></div>
-                
-            </div>
+                  </div>
+                </section>
+
+                <!-- Здесь будут дополнительные услуги -->
+              </div>
+
         </main>
     
         <footer class="page-footer"></footer>
