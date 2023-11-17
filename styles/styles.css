@@ -17,7 +17,6 @@
 html,
 body {
   width: 100%;
-  overflow: scroll;
 }
 body {
   -webkit-box-sizing: border-box;
