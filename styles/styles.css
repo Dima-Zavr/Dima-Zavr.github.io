@@ -612,6 +612,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  border: none;
 }
 .inf__btn:hover {
   background-color: #a51505;
