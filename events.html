@@ -4,9 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lenni Art</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/events.css">
-  <link rel="stylesheet" href="styles/event.css">
+  <link rel="stylesheet" href="styles/styles.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
@@ -35,96 +33,183 @@
 
   <main class="main">
 
-    <section class="events">
+    <section class="events events__events">
       <h2 class="section__title">Мероприятия</h2>
-      <div class="listing__events-list">
+      <div class="events__listing">
 
-        <article class="event-card listing__event-card">
-          <a href="#" class="event-card__link">
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
-              <img src="assets/images/Nirvana.jpg" alt="nirvana" class="event-card__img" />
+              <img src="assets/images/events/Nirvana.jpg" alt="Nirvana" class="event-card__img" />
             </picture>
             <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
-            <p class="event-card__description">
-              Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
-            </p>
+            <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
             <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
           </a>
         </article>
-
-        <article class="event-card listing__event-card">
-          <a href="#" class="event-card__link">
-            <picture class="event-card__picture">
-              <img src="assets/images/HowStuffWorks.jpg" alt="nirvana" class="event-card__img" />
-            </picture>
-            <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
-            <p class="event-card__description">
-              Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
-            </p>
-            <time datetime="2022-12-07T18:00" class="event-card__time">14.12.2022 | начало 18.30</time>
-          </a>
-        </article>
-
-        <article class="event-card listing__event-card">
+        <article class="event-card  listing__event-card">
           <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
-              <img src="assets/images/Sade.jpg" alt="nirvana" class="event-card__img" />
+              <img src="assets/images/events/Stuff.jpg" alt="Stuff" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+            <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+            <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card__img" />
             </picture>
             <h4 class="event-card__title">Вечер | The Best of Sade</h4>
-            <p class="event-card__description">
-              Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.
-            </p>
+            <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
             <time datetime="2022-12-07T18:00" class="event-card__time">16.12.2022 | начало 20.00</time>
           </a>
         </article>
-
-        <article class="event-card listing__event-card">
+        <article class="event-card  listing__event-card">
           <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
-              <img src="assets/images/выставка Малевича.jpg" alt="nirvana" class="event-card__img" />
+              <img src="assets/images/events/Malevich.jpg" alt="Malevich exhibition" class="event-card__img" />
             </picture>
             <h4 class="event-card__title">Выставка Малевича в Томске</h4>
-            <p class="event-card__description">
-              Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.
-            </p>
+            <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
             <time datetime="2022-12-23T20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
           </a>
         </article>
-
-        <article class="event-card listing__event-card">
+        <article class="event-card  listing__event-card">
           <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
-              <img src="assets/images/арт-съемка для Tatler.png" alt="nirvana" class="event-card__img" />
+              <img src="assets/images/events/Tatler.jpg" alt="Shooting for Tatler" class="event-card__img" />
             </picture>
             <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
-            <p class="event-card__description">
-              Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.
-            </p>
+            <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
             <time datetime="2022-12-25T13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
           </a>
         </article>
-
-        <article class="event-card listing__event-card">
+        <article class="event-card  listing__event-card">
           <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
-              <img src="assets/images/the hatters.png" alt="nirvana" class="event-card__img" />
+              <img src="assets/images/events/The_Hatters.jpg" alt="The Hatters" class="event-card__img" />
             </picture>
             <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
-            <p class="event-card__description">
-              Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко
-            </p>
+            <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
             <time datetime="2022-12-27T10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
           </a>
         </article>
 
       </div>
       <svg class="events__slider" width="128" height="133">
-        <use xlink:href="assets/icons/symbols.svg#скрыть 1920-768"></use>
+        <use xlink:href="assets/icons/symbols.svg#show_more"></use>
       </svg>
     </section>
     <section class="additional-services">
       <h2 class="section__title">Дополнительные услуги</h2>
       <p class="additional-services__text">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.</p>
+
+      <table class="events__tariffs-table  table">
+        <thead class="table__head">
+          <tr class="table__head-tr">
+            <th class="table__th"></th>
+            <th class="table__th">Тариф «Light»</th>
+            <th class="table__th">Тариф «Promo»</th>
+            <th class="table__th">Тариф «All stars»</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__tr">
+            <th class="table__body-th">Стоимость за час</th>
+            <td class="table__td">1 000 ₽</td>
+            <td class="table__td">3 000 ₽</td>
+            <td class="table__td">3 000 ₽</td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Ведущий мероприятия</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Фотосъемка</th>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Видеосъемка</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Организация питания</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Декор</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Звуковое сопровождение</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Дополнительное освещение</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+
+          <tr class="table__tr">
+            <th class="table__body-th">Клининг</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot class="table__footer">
+          <tr class="table__footer-tr">
+            <th class="table__footer-th"></th>
+            <th class="table__footer-th">Тариф «Light»</th>
+            <th class="table__footer-th">Тариф «Promo»</th>
+            <th class="table__footer-th">Тариф «All stars»</th>
+          </tr>
+        </tfoot>
+      </table>
+
     </section>
     <section class="offers home__offers">
       <h3 class="offers__text">Я хочу:</h3>
@@ -140,10 +225,8 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <img src="" alt="" class="page-footer__svg">
-
       <div class="page-footer__inf inf">
         <div class="inf__list">
-          <div class="inf__rec"></div>
           <ul>
             <li>Календарь мероприятий</li>
             <li>Провести мероприятие</li>
@@ -167,7 +250,7 @@
 
       <div class="page-footer__social_network">
         <svg width="160" height="58">
-          <use xlink:href="assets/icons/symbols.svg#соц. сети"></use>
+          <use xlink:href="assets/icons/symbols.svg#social_network"></use>
         </svg>
       </div>
 
