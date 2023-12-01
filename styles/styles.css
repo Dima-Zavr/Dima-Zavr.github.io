@@ -345,6 +345,14 @@ textarea:focus::placeholder {
   border: 1px solid;
   display: inline-block;
 }
+.btn-red {
+  background-color: #bc3324;
+  color: #ffffff;
+  border: none;
+}
+.btn-red:hover {
+  background-color: #a51505;
+}
 .contacts {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -447,17 +455,195 @@ textarea:focus::placeholder {
   grid-template-areas: "checks scheme" "order legend";
   width: 100%;
 }
+.reserve__section-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 .reserve__checks {
   grid-area: checks;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reserve__check {
+  margin-top: 10px;
+}
+.reserve__scheme-title {
+  background-color: #1f1e1e;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 162px;
+  text-align: center;
+}
+.reserve__scheme {
+  grid-area: scheme;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reserve__scheme-wrapper {
+  position: relative;
+  width: 100%;
+}
+.reserve__scheme-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.reserve__scheme__scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .reserve__order {
   grid-area: order;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.reserve__scheme {
-  grid-area: scheme;
+.reserve__tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 18px;
 }
-.reserve__scheme {
-  grid-area: scheme;
+.reserve__tickets-list {
+  margin-bottom: 8px;
+}
+.reserve__qty::after {
+  content: " " attr(data-caption) " | " attr(data-price);
+}
+.reserve__sum {
+  font-weight: 600;
+}
+.reserve__sum::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
+}
+.reserve__total {
+  margin: 0 auto 53px auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+.reserve__total::before {
+  content: attr(data-caption);
+  margin-right: 30px;
+}
+.reserve__total::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
+}
+.reserve__submit {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.reserve__legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+}
+.legend__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-bottom: 15px;
+}
+.legend__cost-el {
+  font-size: 14px;
+}
+.legend__rect {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+.legend .rect-red {
+  background-color: #a51505;
+}
+.legend .rect-black {
+  background-color: #1f1e1e;
+}
+.legend__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+.legend__circle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 20px;
+}
+.legend .circle-red {
+  border: 1px solid #a51505;
+  position: relative;
+}
+.legend .circle-red::after {
+  content: "";
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+  right: 11px;
+  top: -0.5px;
+  border: 1px solid #1f1e1e;
+}
+.legend .circle-gray {
+  background-color: lightgray;
+  margin-right: 30px;
+}
+.check--red {
+  color: #bc3324;
+}
+.check--red .check__mark {
+  border-color: #bc3324;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #bc3324;
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .main-header {
   min-width: 100%;
