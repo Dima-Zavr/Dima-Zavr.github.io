@@ -103,14 +103,19 @@
             <time datetime="2022-12-07T18:00" class="event-card__time">16.12.2022 | начало 20.00</time>
           </a>
         </article>
-
+        <a href="events.html" class="events__btn">Смотреть все</a>
       </div>
-
-      <svg class="events__slider" width="527" height="62">
-        <use xlink:href="assets/icons/symbols.svg#slider"></use>
-      </svg>
-
-      <a href="events.html" class="events__btn">Смотреть все</a>
+      <div class="events__slider">
+        <svg class="events__slider-svg" width="92" height="62">
+          <use xlink:href="assets/icons/symbols.svg#slider_arrow_left"></use>
+        </svg>
+        <svg class="events__slider-svg" width="99" height="2">
+          <use xlink:href="assets/icons/symbols.svg#slider"></use>
+        </svg>
+        <svg class="events__slider-svg" width="92" height="62">
+          <use xlink:href="assets/icons/symbols.svg#slider_arrow_right"></use>
+        </svg>
+      </div>
 
     </section>
     <section class="blog home__blog">
@@ -182,7 +187,49 @@
     </section>
     <section class="contacts home__contacts">
       <h2 class="section__title">Контакты</h2>
-
+      <div class="contacts__block">
+        <div class="contacts__inf">
+          <div class="contacts__el">
+            <div class="contacts__svg">
+              <svg width="24px" height="24px">
+                <use xlink:href="assets/icons/symbols.svg#location"></use>
+              </svg>
+            </div>
+            <div class="contacts__el-text">
+              <p class="contacts__el-text1">Томск, Белая 8</p>
+              <p>2 этаж</p>
+              <p>оф. 207-208</p>
+            </div>
+          </div>
+          <div class="contacts__el">
+            <div class="contacts__svg">
+              <svg width="24px" height="24px">
+                <use xlink:href="assets/icons/symbols.svg#home"></use>
+              </svg>
+            </div>
+            <div class="contacts__el-text">
+              <p class="contacts__el-text1">Отдел аренды </p>
+              <p>+7 499 350 0730</p>
+              <p>hi@tagree.ru</p>
+            </div>
+          </div>
+          <div class="contacts__el">
+            <div class="contacts__svg">
+              <svg width="24px" height="24px">
+                <use xlink:href="assets/icons/symbols.svg#star"></use>
+              </svg>
+            </div>
+            <div class="contacts__el-text">
+              <p class="contacts__el-text1">Отдел мероприятий </p>
+              <p>+7 499 350 0730</p>
+              <p>hi@tagree.ru</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img src="assets/images/map.jpg" alt="map">
+        </div>
+      </div>
     </section>
     <section class="text-bg home__text">
       <p class="text-bg__text text-bg__bg1">
