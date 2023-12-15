@@ -20,10 +20,10 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="events.html" class="page-header__nav-link" id="">Мероприятия</a>
-        <a href="#" class="page-header__nav-link" id="">Блог</a>
-        <a href="#" class="page-header__nav-link" id="">О нас</a>
-        <a href="#" class="page-header__nav-link" id="">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
       <div class="page-header__btn">
         <a href="#" class="btn page-header__user-btn">Войти</a>
@@ -33,6 +33,14 @@
 
   <main class="main">
 
+    <div class="breadcrumb">
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./index.html">Главная</a>
+      </article>
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./events.html">Мероприятия</a>
+      </article>
+    </div>
     <section class="events events__events">
       <h2 class="section__title">Мероприятия</h2>
       <div class="events__listing">
@@ -270,17 +278,15 @@
           </ul>
         </div>
         <form class="inf__mailing">
-          <label for="agree">
-            <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
-            <div class="inf__inputbtn">
-              <input type="email" class="inf__input" placeholder="Email" required>
-              <button class="inf__btn">Подписаться</button>
-            </div>
-            <div class="check" for="agree">
-              <input type="checkbox" id="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <p class="page-footer__p">Согласен на обработку персональных данных</p>
-            </div>
+          <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" class="inf__input" placeholder="Email" required>
+            <button class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" class="check__input" required checked>
+            <span class="check__mark"></span>
+            Согласен на обработку персональных данных
           </label>
         </form>
       </div>
@@ -301,7 +307,7 @@
         </div>
         <div class="links__right">
           <p class="page-footer__p links__link2">Создание и продвижение</p>
-          <svg width="56px" height="17px" href="https://tagree.ru/">
+          <svg width="56px" height="17px">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>
@@ -324,7 +330,7 @@
         <form class="pp__form form">
 
           <div class="first__stroke">
-            <label class="field">
+            <div class="field">
               <span class="field__title">Формат мероприятия:</span>
               <div class="radio">
                 <label class="radio__item">
@@ -351,10 +357,10 @@
                   <span class="radio__label">Другое</span>
                 </label>
               </div>
-            </label>
+            </div>
 
             <div>
-              <label class="field">
+              <div class="field">
                 <span class="field__title">Планируемое количество посетителей:</span>
                 <select class="field__select" name="amount">
                   <option value="20">до 20 человек</option>
@@ -362,21 +368,21 @@
                   <option value="500">от 100 до 500 человек</option>
                   <option value="1000">более 500 человек</option>
                 </select>
-              </label>
+              </div>
               <br>
-              <label class="field">
+              <div class="field">
                 <span class="field__title">Дата проведения:</span>
                 <div style="display: flex;">
                   <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ДД" name="day" required>
                   <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ММ" name="month" required>
                   <input class="field__input field__input-year" type="text" maxlength="4" minlength="4" placeholder="ГГГГ" name="year" required>
                 </div>
-              </label>
+              </div>
 
             </div>
           </div>
 
-          <label class="field">
+          <div class="field">
             <span class="field__title">Контактные данные:</span>
             <div class="contact-data">
               <div class="contact-data__el">
@@ -396,7 +402,7 @@
                 <input class="field__input" type="email" placeholder="Email" name="email" required>
               </div>
             </div>
-          </label>
+          </div>
 
           <br>
           <br>

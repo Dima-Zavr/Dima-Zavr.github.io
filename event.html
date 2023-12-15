@@ -20,10 +20,10 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="events.html" class="page-header__nav-link" id="">Мероприятия</a>
-        <a href="#" class="page-header__nav-link" id="">Блог</a>
-        <a href="#" class="page-header__nav-link" id="">О нас</a>
-        <a href="#" class="page-header__nav-link" id="">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
       <div class="page-header__btn">
         <a href="#" class="btn page-header__user-btn">Войти</a>
@@ -32,6 +32,18 @@
   </header>
 
   <main class="main">
+    <div class="breadcrumb">
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./index.html">Главная</a>
+      </article>
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./events.html">Мероприятия</a>
+      </article>
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./event.html">Вечер | The Best of Sade</a>
+      </article>
+    </div>
+
 
     <section class="event">
       <h1 class="event__title"> Вечер | The Best of Sade</h1>
@@ -42,7 +54,7 @@
           <div class="event__place">Кафе «Птичка»</div>
           <div class="event__line-left"></div>
         </div>
-        <img src="assets/images/events/Sade.jpg" alt="Sade" width="497px" height="532px">
+        <img src="assets/images/events/Sade.jpg" alt="Sade" width="497" height="532">
         <div class="event__header-right">
           <div class="event__line-right"></div>
           <date datetime="2022-12-16T20:00" class="event__date">20.00 <span class="event__date-word">начало</span>
@@ -227,17 +239,15 @@
           </ul>
         </div>
         <form class="inf__mailing">
-          <label for="agree">
-            <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
-            <div class="inf__inputbtn">
-              <input type="email" class="inf__input" placeholder="Email" required>
-              <button class="inf__btn">Подписаться</button>
-            </div>
-            <div class="check" for="agree">
-              <input type="checkbox" id="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <p class="page-footer__p">Согласен на обработку персональных данных</p>
-            </div>
+          <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" class="inf__input" placeholder="Email" required>
+            <button class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" class="check__input" required checked>
+            <span class="check__mark"></span>
+            Согласен на обработку персональных данных
           </label>
         </form>
       </div>
@@ -258,7 +268,7 @@
         </div>
         <div class="links__right">
           <p class="page-footer__p links__link2">Создание и продвижение</p>
-          <svg width="56px" height="17px" href="https://tagree.ru/">
+          <svg width="56px" height="17px">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>

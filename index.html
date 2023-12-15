@@ -20,10 +20,10 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="events.html" class="page-header__nav-link" id="">Мероприятия</a>
-        <a href="#" class="page-header__nav-link" id="">Блог</a>
-        <a href="#" class="page-header__nav-link" id="">О нас</a>
-        <a href="#" class="page-header__nav-link" id="">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
       <div class="page-header__btn">
         <a href="#" class="btn page-header__user-btn">Войти</a>
@@ -53,16 +53,16 @@
       <h2 class="section__title">О нас</h2>
       <h3 class="about__title">Проект «Millennials»</h3>
       <p class="about__text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.</p>
-      <img class="about__img1" src="assets/images/pic1.png">
+      <img class="about__img1" src="assets/images/pic1.png" alt="concert">
       <div class="about__pic2">
-        <img class="about__img2" src="assets/images/pic2.png">
+        <img class="about__img2" src="assets/images/pic2.png" alt="exhibition">
       </div>
       <h3 class="about__title about__title2">Мы предоставляем площади для вашего мероприятия </h3>
       <p class="about__text">И оказываем помощь с организацией, если вам это нужно.
         <br>Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
       </p>
       <div class="about__rectangle">
-        <img class="about__img3" src="assets/images/pic3.png">
+        <img class="about__img3" src="assets/images/pic3.png" alt="open space">
       </div>
       <p class="about__text about__text3">Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
       <svg class="about__btn" width="345" height="62">
@@ -259,17 +259,15 @@
           </ul>
         </div>
         <form class="inf__mailing">
-          <label for="agree">
-            <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
-            <div class="inf__inputbtn">
-              <input type="email" class="inf__input" placeholder="Email" required>
-              <button class="inf__btn">Подписаться</button>
-            </div>
-            <div class="check" for="agree">
-              <input type="checkbox" id="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <p class="page-footer__p">Согласен на обработку персональных данных</p>
-            </div>
+          <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" class="inf__input" placeholder="Email" required>
+            <button class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" class="check__input" required checked>
+            <span class="check__mark"></span>
+            Согласен на обработку персональных данных
           </label>
         </form>
       </div>
@@ -290,7 +288,7 @@
         </div>
         <div class="links__right">
           <p class="page-footer__p links__link2">Создание и продвижение</p>
-          <svg width="56px" height="17px" href="https://tagree.ru/">
+          <svg width="56px" height="17px">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>
@@ -313,7 +311,7 @@
         <form class="pp__form form">
 
           <div class="first__stroke">
-            <label class="field">
+            <div class="field">
               <span class="field__title">Формат мероприятия:</span>
               <div class="radio">
                 <label class="radio__item">
@@ -340,10 +338,10 @@
                   <span class="radio__label">Другое</span>
                 </label>
               </div>
-            </label>
+            </div>
 
             <div>
-              <label class="field">
+              <div class="field">
                 <span class="field__title">Планируемое количество посетителей:</span>
                 <select class="field__select" name="amount">
                   <option value="20">до 20 человек</option>
@@ -351,21 +349,21 @@
                   <option value="500">от 100 до 500 человек</option>
                   <option value="1000">более 500 человек</option>
                 </select>
-              </label>
+              </div>
               <br>
-              <label class="field">
+              <div class="field">
                 <span class="field__title">Дата проведения:</span>
                 <div style="display: flex;">
                   <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ДД" name="day" required>
                   <input class="field__input field__input-date" type="text" maxlength="2" minlength="2" placeholder="ММ" name="month" required>
                   <input class="field__input field__input-year" type="text" maxlength="4" minlength="4" placeholder="ГГГГ" name="year" required>
                 </div>
-              </label>
+              </div>
 
             </div>
           </div>
 
-          <label class="field">
+          <div class="field">
             <span class="field__title">Контактные данные:</span>
             <div class="contact-data">
               <div class="contact-data__el">
@@ -385,7 +383,7 @@
                 <input class="field__input" type="email" placeholder="Email" name="email" required>
               </div>
             </div>
-          </label>
+          </div>
 
           <br>
           <br>

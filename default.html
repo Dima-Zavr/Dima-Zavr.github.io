@@ -19,10 +19,10 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="events.html" class="page-header__nav-link" id="">Мероприятия</a>
-        <a href="#" class="page-header__nav-link" id="">Блог</a>
-        <a href="#" class="page-header__nav-link" id="">О нас</a>
-        <a href="#" class="page-header__nav-link" id="">Контакты</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
       <div class="page-header__btn">
         <a href="#" class="btn page-header__user-btn">Войти</a>
@@ -64,7 +64,10 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
-      <img src="" alt="" class="page-footer__svg">
+      <div class="page-footer__lines">
+        <div class="page-footer__line1"></div>
+        <div class="page-footer__line2"></div>
+      </div>
       <div class="page-footer__inf inf">
         <div class="inf__list">
           <ul>
@@ -75,17 +78,18 @@
             <li>Контакты</li>
           </ul>
         </div>
-        <div class="inf__mailing">
+        <form class="inf__mailing">
           <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
           <div class="inf__inputbtn">
-            <input type="email" class="inf__input" placeholder="Email">
+            <input type="email" class="inf__input" placeholder="Email" required>
             <button class="inf__btn">Подписаться</button>
           </div>
-          <label class="inf__checkbox" for="agree">
-            <input type="checkbox" id="agree">
-            <p class="page-footer__p">Согласен на обработку персональных данных</p>
+          <label class="check">
+            <input type="checkbox" class="check__input" required checked>
+            <span class="check__mark"></span>
+            Согласен на обработку персональных данных
           </label>
-        </div>
+        </form>
       </div>
 
       <div class="page-footer__social_network">
