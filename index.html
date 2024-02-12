@@ -2,7 +2,7 @@
 <html lang="ru" class="//show-event-popup">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Lenni Art</title>
   <link rel="stylesheet" href="styles/styles.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +11,10 @@
 </head>
 
 <body class="body">
-
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-icon" width="202" height="147">
+        <svg class="page-header__logo-icon">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
@@ -24,15 +23,28 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__btn">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
-
   <main class="main">
-
     <section class="main-header home__main-header">
       <h1 class="main-header__title">Арт - пространство</h1>
       <div class="main-header__picture">
@@ -51,28 +63,41 @@
     </section>
     <section class="about home__about">
       <h2 class="section__title">О нас</h2>
-      <h3 class="about__title">Проект «Millennials»</h3>
-      <p class="about__text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.</p>
-      <img class="about__img1" src="assets/images/pic1.png" alt="concert">
-      <div class="about__pic2">
+      <div class="about__block1">
+        <h3 class="about__title">Проект «Millennials»</h3>
+        <p class="about__text">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.</p>
+        <img class="about__img1" src="assets/images/pic1.png" alt="concert">
+      </div>
+      <div class="about__block2">
+        <div style="width: 100%">
+          <h3 class="about__title about__title2">Мы предоставляем площади для вашего мероприятия </h3>
+          <p class="about__text2">И оказываем помощь с организацией, если вам это нужно.
+            <br>Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
+          </p>
+        </div>
         <img class="about__img2" src="assets/images/pic2.png" alt="exhibition">
       </div>
-      <h3 class="about__title about__title2">Мы предоставляем площади для вашего мероприятия </h3>
-      <p class="about__text">И оказываем помощь с организацией, если вам это нужно.
-        <br>Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
-      </p>
-      <div class="about__rectangle">
-        <img class="about__img3" src="assets/images/pic3.png" alt="open space">
+      <div class="about__block3">
+        <div class="about__rectangle"></div>
+        <div class="about__pic3">
+          <img class="about__img3" src="assets/images/pic3.png" alt="open space">
+        </div>
+        <div class="about__block31">
+          <p class="about__text about__text3">Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
+          <div class="about__link">
+            <p class="about__btn-text">Смотреть</p>
+            <svg class="about__btn">
+              <use xlink:href="assets/icons/symbols.svg#blog_link"></use>
+            </svg>
+          </div>
+
+        </div>
       </div>
-      <p class="about__text about__text3">Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
-      <svg class="about__btn" width="345" height="62">
-        <use xlink:href="assets/icons/symbols.svg#about_see"></use>
-      </svg>
     </section>
     <section class="events main__events">
       <h2 class="section__title">Мероприятия</h2>
       <div class="events__listing">
-
+        <!-- prettier-ignore -->
         <article class="event-card  listing__event-card">
           <a href="event.html" class="event-card__link">
             <picture class="event-card__picture">
@@ -119,15 +144,18 @@
 
     </section>
     <section class="blog home__blog">
-
       <h2 class="section__title">Блог</h2>
-
       <div class="listing__article-list">
         <!-- prettier-ignore -->
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/blog/Theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
+              <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/theatre.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg" />
+              <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/theatre.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre.jpg" />
+              <source type="image/webp" srcset="assets/images/blog/theatre.webp" />
+              <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
@@ -135,7 +163,7 @@
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
               <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+                <svg class="arrow__icon">
                   <use xlink:href="assets/icons/symbols.svg#blog_link"></use>
                 </svg>
               </div>
@@ -146,7 +174,12 @@
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/blog/VR.jpg" alt="VR выставка" class="article-card__img" />
+              <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/vr.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/vr.jpg" />
+              <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/vr.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/vr.jpg" />
+              <source type="image/webp" srcset="assets/images/blog/vr.webp" />
+              <img src="assets/images/blog/vr.jpg" alt="VR выставка" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
@@ -154,7 +187,7 @@
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Выставка VR в Томске</h4>
               <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+                <svg class="arrow__icon">
                   <use xlink:href="assets/icons/symbols.svg#blog_link"></use>
                 </svg>
               </div>
@@ -165,7 +198,12 @@
         <article class="article-card listing__article-card">
           <a href="#" class="article-card__link">
             <picture class="article-card__picture">
-              <img src="assets/images/blog/Rocking_radio.jpg" alt="Rocking radio" class="article-card__img" />
+              <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/rocking_radio.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/blog/rocking_radio.jpg" />
+              <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/rocking_radio.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/blog/rocking_radio.jpg" />
+              <source type="image/webp" srcset="assets/images/blog/rocking_radio.webp" />
+              <img src="assets/images/blog/rocking_radio.jpg" alt="Rocking radio" class="article-card__img" />
             </picture>
           </a>
           <div class="article-card__info">
@@ -173,7 +211,7 @@
             <a href="#" class="article-card__title-link">
               <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
               <div class="article-card__arrow arrow">
-                <svg class="arrow__icon" width="92" height="62">
+                <svg class="arrow__icon">
                   <use xlink:href="assets/icons/symbols.svg#blog_link"></use>
                 </svg>
               </div>
@@ -183,7 +221,6 @@
         </article>
       </div>
       <a href="#" class="listing__link link">Смотреть все</a>
-
     </section>
     <section class="contacts home__contacts">
       <h2 class="section__title">Контакты</h2>
@@ -226,22 +263,23 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <img src="assets/images/map.jpg" alt="map">
-        </div>
+        <img class="contacts__map" src="assets/images/map.jpg" alt="map">
       </div>
     </section>
-    <section class="text-bg home__text">
-      <p class="text-bg__text text-bg__bg1">
-        Просто делайте, что нравится
-      </p>
-      <p class="text-bg__text text-bg__bg2">
+    <section class="text-bg">
+      <div class="text-bg__first">
+        <p class="text-bg__text text-bg__text1">
+          Просто делайте,
+        </p>
+        <p class="text-bg__text text-bg__text11">
+          что нравится,
+        </p>
+      </div>
+      <p class="text-bg__text text-bg__text2">
         а мы вам поможем
       </p>
     </section>
-
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__container">
       <div class="page-footer__lines">
@@ -259,7 +297,7 @@
           </ul>
         </div>
         <form class="inf__mailing">
-          <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+          <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
           <div class="inf__inputbtn">
             <input type="email" class="inf__input" placeholder="Email" required>
             <button class="inf__btn">Подписаться</button>
@@ -267,28 +305,31 @@
           <label class="check">
             <input type="checkbox" class="check__input" required checked>
             <span class="check__mark"></span>
-            Согласен на обработку персональных данных
+            <p class="inf__check-text">Согласен на обработку персональных данных</p>
           </label>
         </form>
       </div>
-
-      <div class="page-footer__social_network">
-        <svg width="160" height="58">
-          <use xlink:href="assets/icons/symbols.svg#social_network"></use>
-        </svg>
+      <div class="page-footer__soc_net">
+        <div class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </div>
+        <div class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </div>
       </div>
-
+      <p class="page-footer__p">© Millennials 2022</p>
       <div class="page-footer__links">
         <div class="links__left">
-          <p class="page-footer__p links__p">© Millennials 2022</p>
-          <div>
-            <a href="#" class="page-footer__p links__link1">Политика конфиденциальности</a>
-            <a href="#" class="page-footer__p">Cookies</a>
-          </div>
+          <a href="#" class="links__p">Политика конфиденциальности</a>
+          <a href="#" class="links__p">Cookies</a>
         </div>
         <div class="links__right">
-          <p class="page-footer__p links__link2">Создание и продвижение</p>
-          <svg width="56px" height="17px">
+          <p class="page-footer__text">Создание и продвижение</p>
+          <svg class="links__p" width="56px" height="17px">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>
@@ -309,7 +350,6 @@
           <br />и мы подберем площадку
         </h2>
         <form class="pp__form form">
-
           <div class="first__stroke">
             <div class="field">
               <span class="field__title">Формат мероприятия:</span>
@@ -319,19 +359,16 @@
                   <span class="radio__mark"></span>
                   <span class="radio__label">Мастер-класс/семинар</span>
                 </label>
-
                 <label class="radio__item">
                   <input class="radio__input" type="radio" name="format" value="concert">
                   <span class="radio__mark"></span>
                   <span class="radio__label">Концерт/выступление</span>
                 </label>
-
                 <label class="radio__item">
                   <input class="radio__input" type="radio" name="format" value="exhibition">
                   <span class="radio__mark"></span>
                   <span class="radio__label">Выставка/показ</span>
                 </label>
-
                 <label class="radio__item">
                   <input class="radio__input" type="radio" name="format" value="other">
                   <span class="radio__mark"></span>
@@ -339,7 +376,6 @@
                 </label>
               </div>
             </div>
-
             <div>
               <div class="field">
                 <span class="field__title">Планируемое количество посетителей:</span>
@@ -362,7 +398,6 @@
 
             </div>
           </div>
-
           <div class="field">
             <span class="field__title">Контактные данные:</span>
             <div class="contact-data">
@@ -384,14 +419,12 @@
               </div>
             </div>
           </div>
-
           <br>
           <br>
           <label class="field">
             <span class="field__title">Есть пожелания? Напишите нам:</span>
             <textarea class="field__textarea" name="Пожелания"></textarea>
           </label>
-
           <br>
           <label class="check">
             <input type="checkbox" name="agree" class="check__input" required checked />
@@ -400,7 +433,6 @@
               Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
             </span>
           </label>
-
           <div class="pp__btns">
             <div class="pp__btns-btn">
               <button class="pp__btns-save btn">Отправить</button>
@@ -409,12 +441,10 @@
               <button class="pp__btns-close btn">Закрыть</button>
             </div>
           </div>
-
         </form>
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

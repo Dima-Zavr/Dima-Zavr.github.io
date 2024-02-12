@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Lenni Art</title>
   <link rel="stylesheet" href="styles/styles.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-icon" width="202" height="147">
+        <svg class="page-header__logo-icon">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
@@ -23,9 +23,24 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__btn">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
     </div>
   </header>
@@ -40,7 +55,6 @@
           <h4>Заголовок h4</h4>
           <h5>Заголовок h5</h5>
           <h6>Заголовок h6</h6>
-
           <p>
             Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/" target="_blank">ссылку</a>.
           </p>
@@ -79,7 +93,7 @@
           </ul>
         </div>
         <form class="inf__mailing">
-          <p class="page-footer__p mailing__p">Подпишись и будь в курсе происходящего</p>
+          <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
           <div class="inf__inputbtn">
             <input type="email" class="inf__input" placeholder="Email" required>
             <button class="inf__btn">Подписаться</button>
@@ -87,28 +101,31 @@
           <label class="check">
             <input type="checkbox" class="check__input" required checked>
             <span class="check__mark"></span>
-            Согласен на обработку персональных данных
+            <p class="inf__check-text">Согласен на обработку персональных данных</p>
           </label>
         </form>
       </div>
-
-      <div class="page-footer__social_network">
-        <svg width="160" height="58">
-          <use xlink:href="assets/icons/symbols.svg#social_network"></use>
-        </svg>
+      <div class="page-footer__soc_net">
+        <div class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </div>
+        <div class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </div>
       </div>
-
+      <p class="page-footer__p">© Millennials 2022</p>
       <div class="page-footer__links">
         <div class="links__left">
-          <p class="page-footer__p links__p">© Millennials 2022</p>
-          <div>
-            <a href="#" class="page-footer__p links__link1">Политика конфиденциальности</a>
-            <a href="#" class="page-footer__p">Cookies</a>
-          </div>
+          <a href="#" class="links__p">Политика конфиденциальности</a>
+          <a href="#" class="links__p">Cookies</a>
         </div>
         <div class="links__right">
-          <p class="page-footer__p links__link2">Создание и продвижение</p>
-          <svg width="56px" height="17px">
+          <p class="page-footer__text">Создание и продвижение</p>
+          <svg class="links__p" width="56px" height="17px">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>
