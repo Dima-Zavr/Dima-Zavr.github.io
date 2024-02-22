@@ -20,6 +20,14 @@
   <meta name="apple-mobile-web-app-title" content="Lenni Art">
   <meta name="application-name" content="Lenni Art">
   <meta name="theme-color" content="#dedede">
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
 </head>
 
 <body class="body">
@@ -106,14 +114,10 @@
         </div>
       </div>
     </section>
-
-
     <section class="events main__events">
       <div class="main__events-container">
         <h2 class="section__title">Мероприятия</h2>
       </div>
-
-
       <div class="upcoming__swiper swiper swiper--3s js-swiper events__listing">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -183,15 +187,10 @@
           </button>
         </footer>
       </div>
-
-
       <div class="main__events-container container__show-more">
         <a href="events.html" class="upcoming__link link events__show-more">Смотреть все</a>
       </div>
-
-
     </section>
-
     <section class="blog home__blog">
       <h2 class="section__title">Блог</h2>
       <div class="listing__article-list">
@@ -313,9 +312,7 @@
           </div>
         </div>
         <div class="contacts__map-container">
-          <div class="contacts__map" id="js-contactsMap">
-            <!-- <img class="contacts__map-img" src="assets/images/map.jpg" alt="map"> -->
-          </div>
+          <div class="contacts__map" id="js-contactsMap"></div>
         </div>
       </div>
 
@@ -438,8 +435,8 @@
                 <option value="500">от 100 до 500 человек</option>
                 <option value="1000">более 500 человек</option>
               </select>
-              <div class="form__field field js-dateField">
-                <h6 class="field__title">Дата проведения:</h6>
+              <div class="form__field js-dateField">
+                <span class="field__title">Дата проведения:</span>
                 <div class="field__date">
                   <div class="field__date-inputs">
                     <input class="field__date-input js-dateDay" type="text" placeholder="ДД" readonly />
@@ -493,12 +490,12 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="scripts/jquery.selectric.min.js"></script>
   <script src="scripts/jquery.mask.min.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
   <script src="scripts/jquery.validate-init.js"></script>
   <script src="scripts/air-datepicker.js"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp4vi-l8u895Qil7okfCSiGU9RMvgv5Dk"></script>
   <script src="scripts/swiper.js"></script>
-  <!-- <script src="scripts/pagination.js"></script> -->
   <script src="scripts/main.min.js"></script>
 </body>
 
