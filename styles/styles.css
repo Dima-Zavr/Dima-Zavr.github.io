@@ -423,6 +423,13 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
 }
+label.error,
+span.error {
+  display: block;
+  margin: 5px 0 0;
+  color: #a51505;
+  font-size: 14px;
+}
 .content {
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
@@ -3509,6 +3516,7 @@ textarea:focus::placeholder {
   margin: -40px 0 70px -27px;
   padding: 10px 85px;
   max-width: 595px;
+  width: 100%;
   min-height: 80px;
   background-color: #1f1e1e;
   text-transform: uppercase;
@@ -3568,11 +3576,11 @@ textarea:focus::placeholder {
       flex-wrap: wrap;
   margin-bottom: 30px;
 }
+.form__field {
+  margin-top: 30px;
+}
 .field {
   width: calc(50% - 30px);
-}
-.field__select {
-  margin-bottom: 30px;
 }
 .show-event-popup body {
   overflow: hidden;
@@ -3626,6 +3634,7 @@ textarea:focus::placeholder {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 0;
+  max-width: 110px;
 }
 .field__date-picker {
   -webkit-box-sizing: border-box;
@@ -3638,11 +3647,6 @@ textarea:focus::placeholder {
   border-radius: 5px;
   opacity: 0;
   cursor: pointer;
-}
-.field label.error,
-.field span.error {
-  display: block;
-  margin: 5px 0 0;
 }
 .page-footer {
   width: 100%;
@@ -3758,23 +3762,33 @@ textarea:focus::placeholder {
   font-weight: 600;
 }
 .page-footer__inf .inf__inputbtn {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 410px;
   margin-bottom: 15px;
 }
 .page-footer__inf .inf__input {
   padding: 15px 28px;
+  height: 16px;
   border: none;
 }
 .page-footer__inf .inf__input:focus {
   outline: none;
 }
 .page-footer__inf .inf__btn {
+  position: absolute;
+  right: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 15px 23px;
+  height: 46px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -4617,10 +4631,7 @@ textarea:focus::placeholder {
     font-weight: 700;
   }
   .contacts__map {
-    max-height: 463px;
-  }
-  .contacts__map-container {
-    padding-top: 65.555%;
+    aspect-ratio: 708 / 463;
   }
   .offers {
     margin-bottom: 65px;
@@ -4828,6 +4839,9 @@ textarea:focus::placeholder {
   }
   .page-footer__lines {
     gap: 52px;
+  }
+  .page-footer__inf .inf__inputbtn {
+    width: 375px;
   }
   .page-footer__soc_net {
     top: 0;
@@ -5319,6 +5333,18 @@ textarea:focus::placeholder {
     font-size: 14px;
     margin-bottom: 27px;
   }
+  .page-footer__inf .inf__inputbtn {
+    top: 0;
+    left: -20px;
+    width: 100vw;
+  }
+  .page-footer__inf .inf__input {
+    padding: 15px 20px;
+    width: 100%;
+  }
+  .page-footer__inf .inf__btn {
+    padding: 15px 20px;
+  }
   .page-footer__inf .inf__check-text {
     font-size: 12px;
   }
@@ -5352,17 +5378,5 @@ textarea:focus::placeholder {
   }
   .field__date-input {
     font-size: 14px;
-  }
-  .page-footer__inf .inf__inputbtn {
-    position: relative;
-    top: 0;
-    left: -20px;
-    width: 100%;
-  }
-  .page-footer__inf .inf__input {
-    padding: 15px 20px;
-  }
-  .page-footer__inf .inf__btn {
-    padding: 15px 20px;
   }
 }
