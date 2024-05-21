@@ -74,7 +74,7 @@
     </div>
     <section class="events events__events">
       <div class="main__events-container">
-        <h2 class="section__title">Мероприятия</h2>
+        <h2 class="section-title">Мероприятия</h2>
       </div>
       <div class="events__listing">
         <!-- prettier-ignore -->
@@ -144,7 +144,7 @@
       </svg>
     </section>
     <section class="additional-services">
-      <h2 class="section__title">Дополнительные услуги</h2>
+      <h2 class="section-title">Дополнительные услуги</h2>
       <p class="additional-services__text">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.</p>
 
       <table class="events__tariffs-table  table">
@@ -254,8 +254,8 @@
     <section class="offers home__offers">
       <h3 class="offers__text">Я хочу:</h3>
       <div class="offers__buttons">
-        <a href="#" class="btn offers__event-btn" id="js-eventOpenBtn">Провести мероприятие</a>
-        <a href="#" class="btn offers__tenant-btn">Стать арендатором</a>
+        <button type="submit" class="btn-red offers__btn" id="js-eventOpenBtn">Провести мероприятие</button>
+        <button type="submit" class="btn offers__btn">Стать арендатором</button>
       </div>
     </section>
     <section class="events-inf">
@@ -275,10 +275,9 @@
           </svg>
         </div>
         <p class="el__title">Контакты</p>
-        <p class="el__text">Отдел организации мероприятий
-          <br>+7 499 350 0730
-          <br>hi@tagree.ru
-        </p>
+        <p class="el__text">Отдел организации мероприятий</p>
+        <a href="#">+7 499 350 0730</a>
+        <a href="#">hi@tagree.ru</a>
       </div>
       <div class="events-inf__el el">
         <div class="el__svg">
@@ -300,37 +299,47 @@
       <div class="page-footer__inf inf">
         <div class="inf__list">
           <ul>
-            <li>Календарь мероприятий</li>
-            <li>Провести мероприятие</li>
-            <li>Стать арендатором</li>
-            <li>Наши проекты</li>
-            <li>Контакты</li>
+            <li>
+              <a href="#">Календарь мероприятий</a>
+            </li>
+            <li>
+              <a href="#">Провести мероприятие</a>
+            </li>
+            <li>
+              <a href="#">Стать арендатором</a>
+            </li>
+            <li>
+              <a href="#">Наши проекты</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </div>
         <form action="https://jsonplaceholder.typicode.com/posts" class="inf__mailing" id="js-subscribeForm">
           <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
           <div class="inf__inputbtn">
-            <input type="email" class="inf__input" placeholder="Email" required>
-            <button class="inf__btn">Подписаться</button>
+            <input type="email" name="email" class="inf__input" placeholder="Email" required>
+            <button type="button" class="inf__btn">Подписаться</button>
           </div>
           <label class="check">
-            <input type="checkbox" class="check__input" required checked>
+            <input type="checkbox" name="check" class="check__input" required checked>
             <span class="check__mark"></span>
             <p class="inf__check-text">Согласен на обработку персональных данных</p>
           </label>
         </form>
       </div>
       <div class="page-footer__soc_net">
-        <div class="page-footer__soc_net-circle">
+        <a class="page-footer__soc_net-circle">
           <svg width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#insta"></use>
           </svg>
-        </div>
-        <div class="page-footer__soc_net-circle">
+        </a>
+        <a class="page-footer__soc_net-circle">
           <svg width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#vk"></use>
           </svg>
-        </div>
+        </a>
       </div>
       <p class="page-footer__p">© Millennials 2022</p>
       <div class="page-footer__links">
@@ -340,9 +349,11 @@
         </div>
         <div class="links__right">
           <p class="page-footer__text">Создание и продвижение</p>
-          <svg class="links__p" width="56px" height="17px">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
+          <a href="#" class="links__right">
+            <svg class="links__p" width="56px" height="17px">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
