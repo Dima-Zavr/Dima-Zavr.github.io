@@ -373,6 +373,10 @@ body {
 a {
   color: #1f1e1e;
   outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #a51505;
 }
 img {
   max-width: 100%;
@@ -943,7 +947,17 @@ span.error {
   display: flex;
 }
 .swiper--3s {
-  width: 100%;
+  max-width: 1414px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 70px;
+  padding: 0 40px;
 }
 .swiper--3s .swiper-slide {
   -webkit-box-sizing: border-box;
@@ -2189,16 +2203,23 @@ span.error {
   padding: 15px 40px;
   border: 1px solid;
   display: inline-block;
+  text-align: center;
+  cursor: pointer;
 }
 .btn-red {
+  text-decoration: none;
+  padding: 15px 40px;
+  border: none;
+  display: inline-block;
+  text-align: center;
   background-color: #bc3324;
   color: #ffffff;
-  border: none;
+  cursor: pointer;
 }
 .btn-red:hover {
   background-color: #a51505;
 }
-.section__title {
+.section-title {
   margin: 0 auto 150px;
   max-width: 533px;
   width: 100%;
@@ -2231,12 +2252,6 @@ span.error {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-}
-.event__inf-text-title {
-  margin: 75px 0 20px 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
 }
 .event__inf-text {
   font-size: 16px;
@@ -2346,6 +2361,7 @@ span.error {
 }
 .main-header__picture::before {
   content: "";
+  width: 100%;
   padding-top: 16.927%;
 }
 .main-header__img {
@@ -2493,6 +2509,7 @@ span.error {
   font-weight: 600;
   margin-bottom: 5px;
 }
+.contacts__el-text > a,
 .contacts__el-text > p {
   margin-top: 5px;
 }
@@ -2554,27 +2571,6 @@ span.error {
           justify-content: space-between;
   margin-top: 46px;
   width: 624px;
-}
-.offers__event-btn {
-  color: #ffffff;
-  background-color: #bc3324;
-  width: 192px;
-  text-align: center;
-  border: none;
-}
-.offers__event-btn:hover {
-  background-color: #a51505;
-  border: none;
-}
-.offers__tenant-btn {
-  color: #1f1e1e;
-  background-color: transparent;
-  width: 192px;
-  text-align: center;
-}
-.offers__tenant-btn:hover {
-  color: #ffffff;
-  background-color: #1f1e1e;
 }
 .main__events {
   background-color: #ffffff;
@@ -2638,6 +2634,7 @@ span.error {
 }
 .events__listing {
   max-width: 1414px;
+  gap: 120px 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2646,6 +2643,8 @@ span.error {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+  margin-bottom: 70px;
+  padding: 0 40px;
 }
 .events__slider {
   display: -webkit-box;
@@ -2665,7 +2664,6 @@ span.error {
   cursor: pointer;
 }
 .events__show-more {
-  padding: 15px 0 15px 40px;
   text-decoration: none;
 }
 .events__show-more:hover {
@@ -2686,8 +2684,7 @@ span.error {
   bottom: -64px;
 }
 .listing__event-card {
-  width: calc(33.3333% - 80px);
-  margin: 0 40px 120px;
+  width: calc(33.3333% - 40px);
 }
 .container__show-more {
   position: absolute;
@@ -3112,7 +3109,6 @@ span.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   min-width: 280px;
 }
 .event-card__link {
@@ -3743,10 +3739,6 @@ span.error {
   margin-bottom: 22px;
   font-weight: 600;
 }
-.page-footer__inf .inf__list ul li:hover {
-  color: #a51505;
-  cursor: pointer;
-}
 .page-footer__inf .inf__list ul li:last-child {
   margin-bottom: 0;
 }
@@ -4352,6 +4344,10 @@ span.error {
   body {
     padding-top: 111px;
   }
+  .swiper--3s {
+    padding: 0 40px;
+    margin-bottom: 60px;
+  }
   .swiper--3s .swiper-slide {
     width: calc(33.3333% + 13.3333px);
     min-width: 320px;
@@ -4360,7 +4356,7 @@ span.error {
   .swiper--3s .swiper-slide:last-child {
     width: calc(33.3333% - 26.6666px);
   }
-  .section__title {
+  .section-title {
     margin-bottom: 130px;
   }
   .text-bg__text {
@@ -4392,10 +4388,11 @@ span.error {
   }
   .events__listing {
     padding: 0 40px;
+    gap: 100px 40px;
+    margin-bottom: 60px;
   }
   .listing__event-card {
-    width: calc(33.3333% - 40px);
-    margin: 0 20px 100px;
+    width: calc(33.3333% - (80px/3));
   }
   .page-header {
     height: 111px;
@@ -4439,6 +4436,9 @@ span.error {
   }
 }
 @media (max-width: 1339px) {
+  .swiper--3s {
+    padding: 0 30px;
+  }
   .swiper--3s .swiper-slide {
     width: calc(33.3333% + 10px);
     min-width: 310px;
@@ -4489,10 +4489,10 @@ span.error {
   }
   .events__listing {
     padding: 0 30px;
+    gap: 80px 30px;
   }
   .listing__event-card {
-    width: calc(33.3333% - 30px);
-    margin: 0 15px 100px;
+    width: calc(33.3333% - 20px);
   }
   .page-header__container {
     padding: 0 30px;
@@ -4552,7 +4552,7 @@ span.error {
     right: 30px;
     bottom: -75px;
   }
-  .section__title {
+  .section-title {
     margin-bottom: 100px;
     width: 486px;
     padding: 11px 40px;
@@ -4646,9 +4646,7 @@ span.error {
     width: 566px;
   }
   .listing__event-card {
-    width: calc(50% - 30px);
-    max-width: 405px;
-    margin: 0 15px 80px;
+    width: calc(50% - 15px);
   }
   .page-header__btn {
     width: auto;
@@ -4872,6 +4870,10 @@ span.error {
   .content {
     font-size: 14px;
   }
+  .swiper--3s {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
   .swiper--3s .swiper-slide {
     width: calc(33.3333% + 6.6666px);
     min-width: 300px;
@@ -4898,7 +4900,7 @@ span.error {
   .blog {
     margin-bottom: 90px;
   }
-  .section__title {
+  .section-title {
     width: 100%;
     padding: 11px 0;
     font-size: 20px;
@@ -4909,9 +4911,6 @@ span.error {
   .event__inf {
     padding: 0 20px;
     margin: 50px 0;
-  }
-  .event__inf-text-title {
-    font-size: 16px;
   }
   .breadcrumb__show-more {
     position: static;
@@ -4976,12 +4975,7 @@ span.error {
             flex-direction: column-reverse;
     gap: 25px;
   }
-  .offers__event-btn {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-  }
-  .offers__tenant-btn {
+  .offers__btn {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
@@ -5001,9 +4995,8 @@ span.error {
   }
   .events__listing {
     padding: 0 20px;
-  }
-  .listing__event-card {
-    margin: 0 10px 80px;
+    gap: 60px 20px;
+    margin-bottom: 50px;
   }
   .container__show-more {
     position: static;
@@ -5327,6 +5320,7 @@ span.error {
     font-size: 14px;
     font-weight: 600;
   }
+  .contacts__el-text > a,
   .contacts__el-text > p {
     font-size: 14px;
     margin-top: 0;
@@ -5337,7 +5331,6 @@ span.error {
   }
   .listing__event-card {
     width: 100%;
-    margin: 0 0 60px;
   }
   .page-footer__inf {
     -webkit-box-orient: vertical;
